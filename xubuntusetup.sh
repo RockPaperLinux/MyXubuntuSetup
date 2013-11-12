@@ -1,27 +1,27 @@
 #Update
-sudo apt-get update 
-sudo apt-get upgrade
+sudo apt-get update &&
+sudo apt-get upgrade &&
 
 #Evernote
-sudo add-apt-repository -y ppa:vincent-c/nevernote
+sudo add-apt-repository -y ppa:vincent-c/nevernote &&
 
 #Libreoffice
-sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-1
+sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-1 &&
 
 #Conky manager
-sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-add-repository -y ppa:teejee2008/ppa &&
 
 #Update
-sudo apt-get -y update
-sudo apt-get -y dist-upgrade
+sudo apt-get -y update &&
+sudo apt-get -y dist-upgrade &&
 
 #Libreoffice
-sudo apt-get -y install libreoffice
+sudo apt-get -y install libreoffice &&
 
 #PHP
-sudo apt-get -y install php5-cli
-sudo apt-get -y install php5-json
-sudo apt-get -y install php5-curl
+sudo apt-get -y install php5-cli &&
+sudo apt-get -y install php5-json &&
+sudo apt-get -y install php5-curl &&
 #See http://www.howtogeek.com/howto/linux/show-the-list-of-installed-packages-on-ubuntu-or-debian/ for your packages
 
 #SSH
