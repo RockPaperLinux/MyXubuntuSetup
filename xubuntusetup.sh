@@ -55,4 +55,4 @@ sudo apt-get -y remove gnumeric-doc &&
 
 #Update
 sudo apt-get -y update &&
-sudo apt-get -y upgrade &&
+sudo apt-get -y upgrade
