@@ -12,8 +12,10 @@ sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-1 &&
 sudo apt-add-repository -y ppa:teejee2008/ppa &&
 
 #Terminator
-sudo add-apt-repository ppa:gnome-terminator &&
+sudo add-apt-repository -y ppa:gnome-terminator &&
 
+#Sublime text
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3 &&
 
 #Update
 sudo apt-get -y update &&
@@ -51,6 +53,9 @@ sudo apt-get -y install terminator &&
 
 #MySQL
 sudo apt-get -y install mysql-client-core-5.5 &&
+
+#Sublime text
+sudo apt-get -y install sublime-text-installer &&
 
 #Removing useless stuff
 sudo apt-get -y remove gnome-sudoku &&
