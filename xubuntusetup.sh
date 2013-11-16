@@ -11,6 +11,10 @@ sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-1 &&
 #Conky manager
 sudo apt-add-repository -y ppa:teejee2008/ppa &&
 
+#Terminator
+sudo add-apt-repository ppa:gnome-terminator &&
+
+
 #Update
 sudo apt-get -y update &&
 sudo apt-get -y dist-upgrade &&
@@ -40,6 +44,9 @@ sudo apt-get -y install nixnote &&
 #Conky
 sudo apt-get -y install conky-manager &&
 
+#Terminator
+sudo apt-get install terminator &&
+
 #Removing useless stuff
 sudo apt-get -y remove gnome-sudoku &&
 sudo apt-get -y remove gnome-mines &&
@@ -55,4 +62,5 @@ sudo apt-get -y remove gnumeric-doc &&
 
 #Update
 sudo apt-get -y update &&
-sudo apt-get -y upgrade
+sudo apt-get -y upgrade &&
+sudo apt-get -y clean
