@@ -26,6 +26,8 @@ sudo apt-get -y install libreoffice &&
 sudo apt-get -y install php5-cli &&
 sudo apt-get -y install php5-json &&
 sudo apt-get -y install php5-curl &&
+sudo apt-get -y install php5-mysql &&
+
 #See http://www.howtogeek.com/howto/linux/show-the-list-of-installed-packages-on-ubuntu-or-debian/ for your packages
 
 #SSH
@@ -45,7 +47,10 @@ sudo apt-get -y install nixnote &&
 sudo apt-get -y install conky-manager &&
 
 #Terminator
-sudo apt-get install terminator &&
+sudo apt-get -y install terminator &&
+
+#MySQL
+sudo apt-get -y install mysql-client-core-5.5 &&
 
 #Removing useless stuff
 sudo apt-get -y remove gnome-sudoku &&
