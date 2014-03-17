@@ -1,33 +1,37 @@
 #!/bin/sh
-
+cd /tmp
 #Skype
-wget http://www.skype.com/go/getskype-linux-deb -O skype-installer.deb ;
-sudo dpkg -i skype-installer.deb ;
+wget http://www.skype.com/go/getskype-linux-deb -O skype-installer.deb;
+sudo dpkg -i skype-installer.deb;
 
 #Skype menu bar item
-sudo add-apt-repository ppa:skype-wrapper/ppa -y ;
+## /ONLY UNITY sudo add-apt-repository ppa:skype-wrapper/ppa -y ;
 ## /ONLY UNITY sudo apt-get install skype-wrapper -y ;
 ## /ONLY UNITYsudo apt-get install sni-qt:1386 -y ;
 
 
+wget https://github.com/soimort/google-translate-cli/archive/master.tar.gz
+tar -xvf master.tar.gz
+cd google-translate-cli-master/
+sudo make install
 #System monitor
-sudo apt-get install htop -y ;
+sudo apt-get install htop -y;
 
 #Chrome and dependencies
-sudo apt-get install libxss1 -y ;
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ;
-sudo dpkg -i google-chrome*.deb ;
+sudo apt-get install libxss1 -y;
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
+sudo dpkg -i google-chrome*.deb;
 sudo apt-get install icedtea-plugin -y; 
 
 
 #Unity online search
-sudo apt-get autoremove unity-lens-shopping
-sudo apt-get autoremove unity-lens-music
-sudo apt-get autoremove unity-lens-photos
-sudo apt-get autoremove unity-lens-gwibber
-sudo apt-get autoremove unity-lens-video
+#sudo apt-get autoremove unity-lens-shopping
+#sudo apt-get autoremove unity-lens-music
+#sudo apt-get autoremove unity-lens-photos
+#sudo apt-get autoremove unity-lens-gwibber
+#sudo apt-get autoremove unity-lens-video
 
-# Grub Customizer
+#Grub Customizer
 #sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 #sudo apt-get update
 #sudo apt-get install grub-customizer
@@ -39,16 +43,16 @@ sudo apt-get install php5 -y ;
 sudo apt-get install php5-json -y;
 
 #Java
-sudo apt-get install openjdk-7-jre -y ;
+sudo apt-get install openjdk-7-jre -y;
 
 #Java browser
 
 
 #System monitor
-sudo apt-get install htop -y ;
+sudo apt-get install htop -y;
 
 #Virtualbox
-sudo apt-get install virtualbox -y ;
+sudo apt-get install virtualbox -y;
 #script for creating vmdk of existing harddrive	#Check lsblk for windows partition eg. /dev/sdb and for user metarven
 #sudo chmod +x /dev/sdb
 #sudo chown metaraven /dev/sdb IMPORTANT ONE AFTER WINDOWS BOOT...
