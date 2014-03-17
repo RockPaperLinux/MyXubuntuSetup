@@ -9,11 +9,10 @@ sudo dpkg -i skype-installer.deb;
 ## /ONLY UNITY sudo apt-get install skype-wrapper -y ;
 ## /ONLY UNITYsudo apt-get install sni-qt:1386 -y ;
 
-
-wget https://github.com/soimort/google-translate-cli/archive/master.tar.gz
-tar -xvf master.tar.gz
-cd google-translate-cli-master/
-sudo make install
+wget https://github.com/soimort/google-translate-cli/archive/master.tar.gz;
+tar -xvf master.tar.gz;
+cd google-translate-cli-master/;
+sudo make install;
 #System monitor
 sudo apt-get install htop -y;
 
@@ -23,6 +22,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i google-chrome*.deb;
 sudo apt-get install icedtea-plugin -y; 
 
+sudo apt-get install libreoffice-writer -y;
 
 #Unity online search
 #sudo apt-get autoremove unity-lens-shopping
@@ -39,7 +39,7 @@ sudo apt-get install icedtea-plugin -y;
 notify-send 'Install script 1/3' 'Basic needs installed!' --icon=dialog-information
 
 #PHP
-sudo apt-get install php5 -y ;
+sudo apt-get install php5 -y;
 sudo apt-get install php5-json -y;
 
 #Java
@@ -99,6 +99,8 @@ notify-send 'Install script 3/3' 'Pwetty needs installed!' --icon=dialog-informa
 #sudo apt-get install owncloud-cleint
 
 #download sublime text
+
+sudo apt-get update;
 
 
 
